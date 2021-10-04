@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(122, 170, 243);
+
+}
+
+.container{
+    background-color: rgb(122, 170, 243);
+    width: 50%;
+    height: 100vh;
+    
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-template-rows: 90% 50px;
+}
+
+.the-border{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    
+}
+.text-format{
+    background-color: rgba(102, 26, 138, 0.329);
+    border: none;
+    border-radius: 10px;
+
+    
+}
+
+#upper-chat{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/*This 2 lines that hides the scrollbar i took it from  stakOverFlow*/
+#upper-chat::-webkit-scrollbar {
+    display: none;
+
+  }
+
+
+#bottom-chat{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: 85% 30px 30px;
+    
+
+}
+.bot-text{
+    margin-top: 30px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
+    display: grid;
+    grid-template-columns: 10% 90%; 
+
+}
+.our-text {
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    margin-top: 30px;
+    
+    align-content: right;
+    display: grid;
+    grid-template-columns:  90% 10%;
+
+}
+
+button{
+    border: 5px;
+    outline: 5px;
+    cursor: pointer;
+}
+
+.bot-text img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.img-size{
+    width: 50px;
+    height: 50px;
+}
+
+.center-things{
+    margin: 0 auto;
+
+}
+
+.bot-text p{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px 10px;
+    margin: 5px;
+    color: white;
+    width: 50%;
+    margin-left: 10px;
+    
+}
+
+.our-text img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 100px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.our-text p{
+    margin: 5px;
+    padding: 10px 10px;
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 45%;
+    
+}
+
+#user-input{
+    margin-left: 15px;
+    border-radius: 100px;
+    border: none;
+}
+
+.time-stamp{
+    font-size: 13px;
+    color: rgba(204, 200, 200, 0.87);
+    background-color: none;
+}
+
